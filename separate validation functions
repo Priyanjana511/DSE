@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Form Validation</title>
+
+    <script>
+        // Roll number validation (7-digit numeric)
+        function validateRoll(roll) {
+            return /^[0-9]{7}$/.test(roll);
+        }
+
+        // Name validation (only alphabets)
+        function validateName(name) {
+            return /^[A-Za-z ]+$/.test(name);
+        }
+
+        // Non-empty validation
+        function validateNotEmpty(value) {
+            return value.trim() !== "";
+        }
+
+        function validateForm() {
+            let roll = document.getElementById("roll").value;
+            let name = document.getElementById("name").value;
+            let dob = document.getElementById("dob").value;
+
+            if (!validateRoll(roll)) {
+                alert("Roll number must be a 7-digit number");
+                return false;
+            }
+
+            if (!validateName(name)) {
+                alert("Name must contain only alphabets");
+                return false;
+            }
+
+            if (!validateNotEmpty(dob)) {
+                alert("DOB cannot be empty");
+                return false;
+            }
+
+            alert("Form submitted successfully!");
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+
+    <h2>Student Registration Form</h2>
+
+    <form onsubmit="return validateForm()">
+
+        <!-- Roll Number -->
+        <label>Roll Number:</label><br>
+        <input type="text" id="roll"><br><br>
+
+        <!-- Name -->
+        <label>Name:</label><br>
+        <input type="text" id="name"><br><br>
+
+        <!-- DOB -->
+        <label>Date of Birth:</label><br>
+        <input type="date" id="dob"><br><br>
+
+        <!-- Buttons -->
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+
+</body>
+</html>
