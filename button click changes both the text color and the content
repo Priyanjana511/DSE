@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Example</title>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            $("#btn").click(function() {
+                $("#text").css("color", "red");           // change color
+                $("#text").text("Text has been changed!"); // change content
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+
+    <h2 id="text">Original Text</h2>
+
+    <button id="btn">Click Me</button>
+
+</body>
+</html>
