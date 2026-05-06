@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mouse Events with jQuery</title>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            // Mouse Over
+            $("#link").mouseover(function() {
+                $("body").css("background-color", "green");
+                $(this).text("I'm green now");
+            });
+
+            // Mouse Out
+            $("#link").mouseout(function() {
+                $("body").css("background-color", "red");
+                $(this).text("I'm red now");
+            });
+
+        });
+    </script>
+</head>
+
+<body style="text-align:center; margin-top:100px;">
+
+    <a href="https://www.du.ac.in" target="_blank" id="link">
+        It shows the mouse events
+    </a>
+
+</body>
+</html>
