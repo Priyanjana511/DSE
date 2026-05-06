@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Events Demo</title>
+
+    <script>
+        function onFocus() {
+            document.getElementById("name").style.background = "lightblue";
+        }
+
+        function onBlur() {
+            document.getElementById("name").style.background = "white";
+            alert("Textbox lost focus");
+        }
+
+        function onChange() {
+            alert("Dropdown value changed");
+        }
+
+        function onClickBtn() {
+            alert("Button clicked");
+        }
+
+        function onDblClick() {
+            alert("Double clicked on text");
+        }
+
+        function onSubmitForm() {
+            alert("Form submitted");
+            return false; // prevent actual submit
+        }
+    </script>
+</head>
+
+<body>
+
+    <h2 ondblclick="onDblClick()">Double Click this Heading</h2>
+
+    <!-- Focus & Blur -->
+    <label>Name:</label><br>
+    <input type="text" id="name" onfocus="onFocus()" onblur="onBlur()"><br><br>
+
+    <!-- Change -->
+    <label>Select Course:</label><br>
+    <select onchange="onChange()">
+        <option>BSc</option>
+        <option>MSc</option>
+        <option>BCA</option>
+    </select><br><br>
+
+    <!-- Click -->
+    <button onclick="onClickBtn()">Click Me</button><br><br>
+
+    <!-- Submit -->
+    <form onsubmit="return onSubmitForm()">
+        <input type="submit" value="Submit Form">
+    </form>
+
+</body>
+</html>
