@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+    <script>
+        function showMessage() {
+            alert("Form submitted");
+        }
+    </script>
+</head>
+<body>
+
+    <h2>Student Registration Form</h2>
+
+    <form onsubmit="showMessage()">
+
+        <!-- Text Box -->
+        <label>Full Name:</label><br>
+        <input type="text" name="fullname" required><br><br>
+
+        <!-- Text Area -->
+        <label>Address:</label><br>
+        <textarea name="address" rows="4" cols="30"></textarea><br><br>
+
+        <!-- Dropdown Box -->
+        <label>Course:</label><br>
+        <select name="course">
+            <option value="BCA">BCA</option>
+            <option value="BBA">BBA</option>
+            <option value="BTech">B.Tech</option>
+            <option value="MBA">MBA</option>
+        </select><br><br>
+
+        <!-- Radio Buttons -->
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <input type="radio" name="gender" value="Other"> Other<br><br>
+
+        <!-- Checkboxes -->
+        <label>Hobbies:</label><br>
+        <input type="checkbox" name="hobby" value="Reading"> Reading
+        <input type="checkbox" name="hobby" value="Sports"> Sports
+        <input type="checkbox" name="hobby" value="Music"> Music<br><br>
+
+        <!-- Buttons -->
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+
+</body>
+</html>
