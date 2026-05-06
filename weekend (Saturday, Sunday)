@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Check Weekend</title>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            $("#checkBtn").click(function() {
+                let dateVal = $("#date").val();
+
+                if (dateVal === "") {
+                    alert("Please select a date");
+                    return;
+                }
+
+                let date = new Date(dateVal);
+                let day = date.getDay(); // 0 = Sunday, 6 = Saturday
+
+                if (day === 0 || day === 6) {
+                    alert("It is a Weekend");
+                } else {
+                    alert("It is a Weekday");
+                }
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+
+    <h2>Check Weekend</h2>
+
+    <input type="date" id="date"><br><br>
+    <button id="checkBtn">Check</button>
+
+</body>
+</html>
