@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Textbox Focus Example</title>
+
+    <script>
+        function changeColor(element) {
+            element.style.backgroundColor = "lightblue";
+        }
+
+        function resetColor(element) {
+            element.style.backgroundColor = "white";
+        }
+    </script>
+</head>
+
+<body>
+
+    <h2>Focus Event Example</h2>
+
+    <input type="text" 
+           onfocus="changeColor(this)" 
+           onblur="resetColor(this)" 
+           placeholder="Click here">
+
+</body>
+</html>
