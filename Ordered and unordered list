@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ordered and Unordered Lists</title>
+</head>
+
+<body>
+
+    <h1>HTML Lists Example</h1>
+
+    <!-- Unordered List -->
+    <h2>Unordered List (Bullets)</h2>
+    <ul>
+        <li>Computer Science</li>
+        <li>Mathematics</li>
+        <li>Physics</li>
+        <li>Chemistry</li>
+    </ul>
+
+    <!-- Ordered List -->
+    <h2>Ordered List (Numbers)</h2>
+    <ol>
+        <li>Wake up</li>
+        <li>Go to College</li>
+        <li>Attend Classes</li>
+        <li>Study</li>
+    </ol>
+
+    <!-- Ordered List with type -->
+    <h2>Ordered List (Roman Numbers)</h2>
+    <ol type="I">
+        <li>Introduction</li>
+        <li>Methods</li>
+        <li>Results</li>
+        <li>Conclusion</li>
+    </ol>
+
+    <!-- Unordered List with style -->
+    <h2>Unordered List (Circle Style)</h2>
+    <ul type="circle">
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Mango</li>
+    </ul>
+
+</body>
+</html>
