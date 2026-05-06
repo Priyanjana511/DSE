@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Images in Webpage Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Logo styling */
+        .logo {
+            width: 150px;
+        }
+
+        /* Table with background image */
+        .bg-table {
+            background-image: url('https://via.placeholder.com/600x300');
+            background-size: cover;
+            color: white;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Icon styling */
+        .icon {
+            width: 40px;
+            height: 40px;
+        }
+
+        .icon-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Logo -->
+    <header style="text-align:center;">
+        <img src="https://via.placeholder.com/150x80?text=LOGO" alt="Website Logo" class="logo">
+        <h1>Image Usage in Webpages</h1>
+    </header>
+
+    <!-- Inline Image -->
+    <section style="text-align:center;">
+        <h2>Inline Image Example</h2>
+        <p>This is an example of an inline image:</p>
+        <img src="https://via.placeholder.com/300" alt="Sample Image">
+    </section>
+
+    <!-- Table with Images -->
+    <section>
+        <h2 style="text-align:center;">Images as Table Data</h2>
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Image</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td><img src="https://via.placeholder.com/80?text=Phone" alt="Phone"></td>
+                <td>$500</td>
+            </tr>
+            <tr>
+                <td>Laptop</td>
+                <td><img src="https://via.placeholder.com/80?text=Laptop" alt="Laptop"></td>
+                <td>$900</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Table with Background Image -->
+    <section>
+        <h2 style="text-align:center;">Table with Background Image</h2>
+        <table class="bg-table">
+            <tr>
+                <th>Name</th>
+                <th>Course</th>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Web Development</td>
+            </tr>
+            <tr>
+                <td>Emma</td>
+                <td>Data Science</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Clickable Icons -->
+    <section>
+        <h2 style="text-align:center;">Clickable Icons</h2>
+        <div class="icon-links">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="https://via.placeholder.com/40?text=F" alt="Facebook" class="icon">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="https://via.placeholder.com/40?text=T" alt="Twitter" class="icon">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="https://via.placeholder.com/40?text=I" alt="Instagram" class="icon">
+            </a>
+        </div>
+    </section>
+
+</body>
+</html>
