@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal and External Linking Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        section {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Linking in HTML</h1>
+
+    <!-- Navigation with internal links -->
+    <h2>Internal Links</h2>
+    <p>Click the links below to jump to sections within this page:</p>
+    <ul>
+        <li><a href="#section1">Go to Section 1</a></li>
+        <li><a href="#section2">Go to Section 2</a></li>
+        <li><a href="#section3">Go to Section 3</a></li>
+    </ul>
+
+    <!-- External links -->
+    <h2>External Links</h2>
+    <p>Click the links below to visit external websites:</p>
+    <ul>
+        <li><a href="https://www.google.com" target="_blank">Visit Google</a></li>
+        <li><a href="https://www.wikipedia.org" target="_blank">Visit Wikipedia</a></li>
+        <li><a href="https://www.github.com" target="_blank">Visit GitHub</a></li>
+    </ul>
+
+    <!-- Sections for internal linking -->
+    <section id="section1">
+        <h2>Section 1</h2>
+        <p>This is Section 1. You can navigate back to the top using internal links.</p>
+        <a href="#top">Back to Top</a>
+    </section>
+
+    <section id="section2">
+        <h2>Section 2</h2>
+        <p>This is Section 2. Internal linking helps users navigate within a webpage.</p>
+        <a href="#top">Back to Top</a>
+    </section>
+
+    <section id="section3">
+        <h2>Section 3</h2>
+        <p>This is Section 3. External links take users to other websites.</p>
+        <a href="#top">Back to Top</a>
+    </section>
+
+    <!-- Top anchor -->
+    <div id="top"></div>
+
+</body>
+</html>
